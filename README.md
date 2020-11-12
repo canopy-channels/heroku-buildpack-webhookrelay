@@ -1,4 +1,4 @@
-# heroku-buildpack-stripecli
+# heroku-buildpack-webhookrelay
 Heroku buildpack that installs Webhook Relay.
 
 ## Why is this useful?
