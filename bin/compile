@@ -14,10 +14,10 @@ function indent() {
 BUILD_DIR=$1
 WEBHOOKRELAY_URL="https://storage.googleapis.com/webhookrelay/downloads/relay-linux-amd64"
 
-echo "-----> Installing Stripe CLI"
+echo "-----> Installing Webhook Relay"
 mkdir -p $BUILD_DIR/.webhookrelay
 cd $BUILD_DIR/.webhookrelay
-sudo wget -O relay "$WEBHOOKRELAY_URL" |& indent
+wget -O relay "$WEBHOOKRELAY_URL" |& indent
 
 # Add the contents of `.webhookrelay` to $PATH by adding a bash script that sets
 # that path to .profile.d. All of the contents of this directory are loaded for
