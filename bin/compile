@@ -18,6 +18,7 @@ echo "-----> Installing Webhook Relay"
 mkdir -p $BUILD_DIR/.webhookrelay
 cd $BUILD_DIR/.webhookrelay
 wget -O relay "$WEBHOOKRELAY_URL" |& indent
+chmod +wx relay
 
 # Add the contents of `.webhookrelay` to $PATH by adding a bash script that sets
 # that path to .profile.d. All of the contents of this directory are loaded for
